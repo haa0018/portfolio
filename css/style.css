@@ -1,0 +1,33 @@
+/* Custom styles for the card */
+.card {
+    transition: transform 0.2s;
+}
+
+/* Zoom effect on hover */
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* Search Bar styles */
+.search-bar {
+    background-color: white;
+    color: black;
+    transition: color 0.3s, background-color 0.3s;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.search-bar:hover {
+    color: red;
+    background-color: #f8f8f8;
+}
+
+.search-bar:active,
+.search-bar:focus {
+    color: red;
+    background-color: #f8f8f8;
+    border-color: red;
+    outline: none;
+}
