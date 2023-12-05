@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #ffffff; /* White */
+    --secondary-color: #ffA500; /* Orange */
+}
+
 /* Custom styles for the card */
 .card {
     transition: transform 0.2s;
@@ -10,7 +15,7 @@
 
 /* Search Bar styles */
 .search-bar {
-    background-color: white;
+    background-color: var(--primary-color);
     color: black;
     transition: color 0.3s, background-color 0.3s;
     border: 1px solid #ccc;
@@ -19,21 +24,57 @@
     margin-right: 10px;
 }
 
-.container {
-    max-width: 1200px; /* Adjust as needed */
-    margin: 0 auto; /* Center the container */
-}
-
-
 .search-bar:hover {
-    color: red;
+    color: var(--secondary-color);
     background-color: #f8f8f8;
 }
 
 .search-bar:active,
 .search-bar:focus {
-    color: red;
+    color: var(--secondary-color);
     background-color: #f8f8f8;
-    border-color: red;
+    border-color: var(--secondary-color);
     outline: none;
+}
+
+/* Navigation Bar styles */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    flex: 1;
+}
+
+.navbar li a,
+.navbar li a:link,
+.navbar li a:visited {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    transition: transform .5s;
+}
+
+.navbar li a:hover,
+.navbar li a:focus {
+    transform: scale(1.4);
+    text-decoration: underline;
+}
+
+.navbar li a:active {
+    transition-duration: .2s;
+    transform: scale(1.4) translateX(10px);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
