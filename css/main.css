@@ -22,19 +22,14 @@
     border-radius: 5px;
     padding: 5px;
     margin-right: 10px;
+    width: 150px; /* Adjust as needed */
 }
 
+/* Reduce search bar size on hover */
 .search-bar:hover {
+    width: 120px; /* Adjust as needed */
     color: var(--secondary-color);
     background-color: #f8f8f8;
-}
-
-.search-bar:active,
-.search-bar:focus {
-    color: var(--secondary-color);
-    background-color: #f8f8f8;
-    border-color: var(--secondary-color);
-    outline: none;
 }
 
 /* Navigation Bar styles */
