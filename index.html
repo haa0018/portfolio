@@ -5,132 +5,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiishi Haastrup- Web Portfolio</title>
-     <!-- Custom CSS -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <body>
 
     <div class="container">
         <header>
             <h1>My Portfolio</h1>
+            <!-- Navigation Bar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Your Name</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="meet_the_team.html">Meet the Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="advice_mentorship.html">Advice/Mentorship</a>
+                        </li>
+                    </ul>
+                </div>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Your Name</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="meet_the_team.html">Meet the Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="advice_mentorship.html">Advice/Mentorship</a>
-                </li>
-            </ul>
-        </div>
+                <!-- Search Bar -->
+                <input type="text" class="form-control search-bar" placeholder="Search">
 
-        <!-- Search Bar -->
-        <input type="text" class="form-control search-bar" placeholder="Search">
+            </nav>
+        </header>
 
-    </nav>
-    </header>
+        <!-- Main Content -->
+        <div class="container mt-4">
 
-    <!-- Main Content -->
-    <div class="container mt-4">
+            <!-- Skills Grid -->
+            <div class="row">
 
-        <!-- Skills Grid -->
-        <div class="row">
+                <!-- Design Drawing -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="Design_Drawing.html" class="card-link">
+                        <div class="card">
+                            <img src="path/to/design_drawing_image.jpg" class="card-img-top" alt="Design Drawing">
+                            <div class="card-body">
+                                <h5 class="card-title">Design Drawing</h5>
+                                <!-- Additional card content goes here -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-            <!-- Design Drawing -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <a href="Design Drawing.html" class="card-link">
-                <div class="card">
-                    <img src="path/to/design_drawing_image.jpg" class="card-img-top" alt="Design Drawing">
-                    <div class="card-body">
-                        <h5 class="card-title">Design Drawing</h5>
-                        <!-- Additional card content goes here -->
-                    </div>  
-                </a>
-            </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="Website_Development.html" class="card-link">
+                        <div class="card">
+                            <img src="path/to/website_development_image.jpg" class="card-img-top"
+                                alt="Website Development">
+                            <div class="card-body">
+                                <h5 class="card-title">Website Development</h5>
+                                <!-- Additional card content goes here -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-                <a href="Website Development.html" class="card-link">
-                <div class="card">
-                    <img src="path/to/website_development_image.jpg" class="card-img-top" alt="Website Development">
-                    <div class="card-body">
-                        <h5 class="card-title">Website Development</h5>
-                        <!-- Additional card content goes here -->
+                <!-- Logo Design -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="Logo_Design.html" class="card-link">
+                        <div class="card">
+                            <img src="path/to/logo_design_image.jpg" class="card-img-top" alt="Logo Design">
+                            <div class="card-body">
+                                <h5 class="card-title">Logo Design</h5>
+                                <!-- Additional card content goes here -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Photography -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="Photography.html" class="card-link">
+                        <div class="card">
+                            <img src="path/to/photography_image.jpg" class="card-img-top" alt="Photography">
+                            <div class="card-body">
+                                <h5 class="card-title">Photography</h5>
+                                <!-- Additional card content goes here -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Video Editing -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="Video_Editing.html" class="card-link"></a>
+                    <div class="card">
+                        <img src="path/to/video_editing_image.jpg" class="card-img-top" alt="Video Editing">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Editing</h5>
+                            <!-- Additional card content goes here -->
+                        </div>
                     </div>
-                </a>
-            </div>
+                </div>
 
-            <!-- Logo Design -->
-    <div class="col-lg-4 col-md-6 mb-4">
-        <a href="Logo Design.html" class="card-link">
-        <div class="card">
-            <img src="path/to/logo_design_image.jpg" class="card-img-top" alt="Logo Design">
-            <div class="card-body">
-                <h5 class="card-title">Logo Design</h5>
-                <!-- Additional card content goes here -->
+                <!-- Portrait Drawing -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="Portrait_Drawing.html" class="card-link">
+                        <div class="card">
+                            <img src="path/to/portrait_drawing_image.jpg" class="card-img-top"
+                                alt="Portrait Drawing">
+                            <div class="card-body">
+                                <h5 class="card-title">Portrait Drawing</h5>
+                                <!-- Additional card content goes here -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Add more skills as needed -->
+
             </div>
-        </a>
-    </div>
-    
-   <!-- Photography -->
-<div class="col-lg-4 col-md-6 mb-4">
-    <a href="photography.html" class="card-link">
-    <div class="card">
-        <img src="path/to/photography_image.jpg" class="card-img-top" alt="Photography">
-        <div class="card-body">
-            <h5 class="card-title">Photography</h5>
-            <p class="card-text">Additional information about photography goes here.</p>
         </div>
-    </a>
-</div>
 
+        <!-- Bootstrap JS and Popper.js -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-     <!-- Video Editing -->
-     <div class="col-lg-4 col-md-6 mb-4">
-        <a href="Video Editing.html" class="card-link"></a>
-        <div class="card">
-            <img src="path/to/video_editing_image.jpg" class="card-img-top" alt="Video Editing">
-            <div class="card-body">
-                <h5 class="card-title">Video Editing</h5>
-                <!-- Additional card content goes here -->
-            </div>
-        </a>
-    </div>
+    </body>
 
-    <!-- Portrait Drawing -->
-    <div class="col-lg-4 col-md-6 mb-4">
-        <a href="Portrait Drawing.html" class="card-link">
-        <div class="card">
-            <img src="path/to/portrait_drawing_image.jpg" class="card-img-top" alt="Portrait Drawing">
-            <div class="card-body">
-                <h5 class="card-title">Portrait Drawing</h5>
-                <!-- Additional card content goes here -->
-            </div>
-        </a>
-    </div>
-            <!-- Add more skills as needed -->
-
-    </div>
-
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
+    </html>
