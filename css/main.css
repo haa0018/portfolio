@@ -19,6 +19,12 @@
     margin-right: 10px;
 }
 
+.container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+}
+
+
 .search-bar:hover {
     color: red;
     background-color: #f8f8f8;
