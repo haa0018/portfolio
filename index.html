@@ -1,143 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiishi Haastrup- Web Portfolio</title>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--Link CSS File-->
+     <link rel="stylesheet" href="style.css">
+     <!--Link Bootstrap CSS-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Link Box Icons-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Noki Codes..</title>
 </head>
-
 <body>
+    <!--Header Section-->
+    <header class="header">
+        <a href="#" class="logo">Noki Codes..</a>
+        <i class="bx bx-menu" id="menu-btn" ></i>
+        <nav class="menu-bar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!--Home Section-->
+     <section class="home" id="home">
+        <div class="home-bio">
+            <h3>This Is </h3>
+            <h1>Noki's Portfolio</h1>
+            <h3>I am a <span class="animated-text1">Web Developer In-Training</span></h3>
+            <p>Hello, I'm Noki, a passionate and dedicated Web Developer In-Training. With a keen interest in crafting seamless and engaging digital experiences, I immerse myself in the world of coding to bring ideas to life. <br>My journey involves not just coding but also exploring the art of effective storytelling through web development. Constantly evolving and embracing new technologies, I aspire to create solutions that not only meet but exceed expectations. Join me on this exciting venture, and let's build something incredible together</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/kiishi-haastrup-4b375a186/"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://twitter.com/HAdeoluwakiishi"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.instagram.com/nokis__creation_/"><i class="bx bxl-instagram"></i></a>
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.tiktok.com%2F%40noki_varis%3F_t%3D8i7lHUZkmpi%26_r%3D1&e=AT2s6jdwdIEmpO8dlr9s-u8vMLCAajkjRmU6hSawT-FOK7cd9hruTSKFxtWaMwwJlHE6Gr4n5Yn1QtxvSo-diBYGvkaJWTD4ymB0ueVsrKqN6MU0uAAXRBLGkglNp3Mwx9i7_JW03BswcipC-KVg9xY"><i class="bx bxl-tiktok"></i></a>
+            </div>
+            <a href="#contact" class="btn">Let's Chat a Bit</a>
+        </div>
+        <div class="profile-pic">
+            <img src="images/Profile Pic.jpg" alt="Profile Pic">
+        </div>
+     </section>
 
-    <div class="container">
-        <header>
-            <h1>My Portfolio</h1>
-            <!-- Navigation Bar -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Your Name</a>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="meet_the_team.html">Meet the Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="advice_mentorship.html">Advice/Mentorship</a>
-                        </li>
-                    </ul>
+    <!--About Section-->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About  <span>Me</span></h2>
+        </div>
+
+        <div class="about-items">
+            <div class="about-resume">
+              <h3><span class="animated-text2">Front-End & Back-End Web Developer</span></h3>
+              <a href="Kiishi CV New.pdf" class="btn">Download Resume</a>
+            </div>
+
+            <div class="about-text">
+            <p>Greetings! I'm Noki, a passionate and dedicated Front-End Web Developer in-training, Digital Media Artist, Logo Designer, and Photographer. With a strong foundation in HTML, CSS, and JavaScript, I am on a journey to bring captivating and user-friendly websites to life. My creative pursuits extend beyond coding—I specialize in crafting visual experiences, designing memorable logos, and capturing moments through the lens. I thrive on challenges and enjoy turning innovative ideas into reality. Let's embark on this exciting digital journey together!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Skills Section-->
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>My <span>Skills</span></h2>
+        </div>
+
+        <div class="skills-items">
+            <div class="skill-card">
+                <i class='bx bxl-html5'></i>
+                <h3>HTML</h3>
+                <p>As a dedicated and aspiring web developer currently pursuing a degree in Interactive Media Design at Algonquin College, I possess a strong foundation in HTML. I am well-versed in crafting structured and semantically meaningful markup. </p>
+            </div>
+            
+                <div class="skill-card">
+                    <i class='bx bxl-css3'></i>
+                    <h3>CSS</h3>
+                    <p>In conjunction with my HTML expertise, I have cultivated a comprehensive skill set in Cascading Style Sheets (CSS) to elevate the visual appeal and responsiveness of web applications. Proficient in leveraging CSS for styling and layout purposes, I ensure seamless and aesthetically pleasing user interfaces. .</p>
                 </div>
-
-                <!-- Search Bar -->
-                <input type="text" class="form-control search-bar" placeholder="Search">
-
-            </nav>
-        </header>
-
-        <!-- Main Content -->
-        <div class="container mt-4">
-
-            <!-- Skills Grid -->
-            <div class="row">
-
-                <!-- Design Drawing -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="Design_Drawing.html" class="card-link">
-                        <div class="card">
-                            <img src="path/to/design_drawing_image.jpg" class="card-img-top" alt="Design Drawing">
-                            <div class="card-body">
-                                <h5 class="card-title">Design Drawing</h5>
-                                <!-- Additional card content goes here -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="Website_Development.html" class="card-link">
-                        <div class="card">
-                            <img src="path/to/website_development_image.jpg" class="card-img-top"
-                                alt="Website Development">
-                            <div class="card-body">
-                                <h5 class="card-title">Website Development</h5>
-                                <!-- Additional card content goes here -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Logo Design -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="Logo_Design.html" class="card-link">
-                        <div class="card">
-                            <img src="path/to/logo_design_image.jpg" class="card-img-top" alt="Logo Design">
-                            <div class="card-body">
-                                <h5 class="card-title">Logo Design</h5>
-                                <!-- Additional card content goes here -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Photography -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="Photography.html" class="card-link">
-                        <div class="card">
-                            <img src="path/to/photography_image.jpg" class="card-img-top" alt="Photography">
-                            <div class="card-body">
-                                <h5 class="card-title">Photography</h5>
-                                <!-- Additional card content goes here -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Video Editing -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="Video_Editing.html" class="card-link"></a>
-                    <div class="card">
-                        <img src="path/to/video_editing_image.jpg" class="card-img-top" alt="Video Editing">
-                        <div class="card-body">
-                            <h5 class="card-title">Video Editing</h5>
-                            <!-- Additional card content goes here -->
-                        </div>
+            
+                    <div class="skill-card">
+                        <i class='bx bxl-javascript'></i>
+                        <h3>Javascript</h3>
+                        <p>With a solid foundation in JavaScript, I bring dynamic interactivity and enhanced functionality to web projects. Proficient in both front-end and back-end scripting, I utilize JavaScript to create seamless user experiences and responsive interfaces.  </p>
                     </div>
-                </div>
-
-                <!-- Portrait Drawing -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="Portrait_Drawing.html" class="card-link">
-                        <div class="card">
-                            <img src="path/to/portrait_drawing_image.jpg" class="card-img-top"
-                                alt="Portrait Drawing">
-                            <div class="card-body">
-                                <h5 class="card-title">Portrait Drawing</h5>
-                                <!-- Additional card content goes here -->
-                            </div>
+                   
+                        <div class="skill-card">
+                            <i class='bx bxl-camera'></i>
+                            <h3>Photography</h3>
+                            <p>Behind the lens, I capture moments that tell compelling stories. With an artistic eye and technical expertise, I specialize in creating visually stunning photographs that resonate with emotion. Whether it's a portrait, landscape, or event coverage, I strive to deliver images that leave a lasting impression and convey the essence of the subject.</p>
                         </div>
-                    </a>
-                </div>
-                <!-- Add more skills as needed -->
+                        
+                            <div class="skill-card">
+                                <i class='bx bxl-dribbble'></i>
+                                <h3>Logo Design</h3>
+                                <p>In the realm of visual identity, I craft distinctive logos that embody the essence of brands. Through a fusion of creativity and strategic thinking, I design logos that stand out and make a memorable impact. From conceptualization to execution.</p>
+                            </div>
 
+                                <div class="skill-card">
+                                    <i class='bx bxl-github'></i>
+                                    <h3>GitHub</h3>
+                                    <p>As an avid user of GitHub, I leverage this powerful version control platform to manage and collaborate on coding projects. Proficient in Git, I ensure seamless collaboration with development teams.</p>
+                                </div>
+
+            
+        </div>
+    </section>
+
+    <!--Projects Section-->
+    <section class="projects" id="projects">
+        <div class="heading">
+            <h2>Completed <span>Projects</span></h2>
+        </div>
+        <div class="projects-items">
+            <div class="project-card">
+                <img src="images/Video Editing.JPG" alt="Video Editing">
+            <div class="card-overlay">
+                <a href="#">
+                    <i class="bx bc-link-alt"></i>
+                </a>
             </div>
         </div>
 
-        <!-- Bootstrap JS and Popper.js -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <div class="project-card">
+            <img src="images/photography 2.JPG" alt="Photograpghy">
+        <div class="card-overlay">
+            <a href="#">
+                <i class="bx bc-link-alt"></i>
+            </a>
+        </div>
+    </div>
 
-    </body>
+    <div class="project-card">
+        <img src="images/Design Making2.JPG" alt="Design making">
+    <div class="card-overlay">
+        <a href="#">
+            <i class="bx bc-link-alt"></i>
+        </a>
+    </div>
+</div>
 
-    </html>
+<div class="project-card">
+    <img src="images/Web Dev2.JPG" alt="Laptop Screen">
+<div class="card-overlay">
+    <a href="#">
+        <i class="bx bc-link-alt"></i>
+    </a>
+</div>
+</div>
+        </div> 
+    </section>
+
+    <!--Contact Section-->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact <span>Me</span></h2>
+        </div>
+
+        <form action="#" class="form">
+            <input type="text"  placeholder="Your Name">
+            <input type="text"  placeholder="Your Email">
+             <textarea name="" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
+             <input type="submit" class="btn" value="Send Message">
+        </form>
+
+    </section>
+    
+     <!--Footer Section-->
+
+    <footer class="footer">
+        <hr>
+        <p>Copyrights &copy; 2022 Noki. Codes... 
+            <br>All Rights Reserved.
+        </p>
+    </footer>
+
+
+
+
+    <!--Scroll Section-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--Typing Animation  Section-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!--JS Script File-->
+    <script src="script.js"></script>
+    <!--Link Bootstrp JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
