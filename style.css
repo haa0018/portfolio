@@ -14,7 +14,7 @@
 
 *{
     color: black;
-    background-color: white;
+    background-color: transparent;
 }
 
 html{
@@ -46,26 +46,30 @@ body{
   color: red;
 }
 
+.logo:hover {
+  color: aqua;
+}
+
 .menu-bar a{
     font-size: 1.5rem;
     margin-left: 3.5rem;
     transition: 0.4s ease;
-    color: #000;
-}
-
-.menu-bar a:hover{
     color: red;
 }
 
-#menu btn {
+.menu-bar a:hover{
+    color: aqua;
+}
+
+#menu-btn {
     font-size: 3rem;
     display: none;
+    
 }
 
 section{
     padding: 10rem 10%;
-    min-height: 100vh;
-
+    min-height: 70vh;
 }
 
 /*Home Section*/
@@ -93,6 +97,20 @@ span{
     padding: 1rem 0;
 }
 
+
+.home-bio .btn{
+    padding: 20px 18px;
+    font-size: 1.5rem;
+    text-align: left;
+    background-color: #000;
+}
+
+.about .btn{
+    padding: 20px 18px;
+    font-size: 1.5rem;
+    text-align: left;
+    background-color: #000;
+}
 .profile-pic img{
     width: 30vw;
     border-radius: 50%;
@@ -122,28 +140,29 @@ span{
     border-radius: 50%;
     transition: 0.4s ease;
     color: #000;
+    box-shadow: 0 0 1rem red;
 }
 
 .social-media a:hover{
-    color: red;
-    box-shadow: 0 0 1rem red;
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
 }
 
 .btn{
     display: inline-block;
-    background: black;
-    margin: 2rem 0;
-    padding: 1rem 2.5rem;
-    border-radius: 1.3rem;
+    background: white;
+    margin: 3px 2px;
+    padding: 20px 22px;
     font-size: 1.3rem;
     color: red;
     font-weight: 600;
     transition: 0.5s ease;
+    border: none;
 }
 
 .btn:hover{
     color: aqua;
-    background: red;
+    background: black;
     box-shadow: 0 0 1rem aqua;
 }
        
@@ -153,6 +172,7 @@ span{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
 }
 
 .heading{
@@ -162,7 +182,7 @@ span{
 }
 
 .about-items{
-    display: flex;
+    display: fixed;
     align-items: center;
     justify-content: center;
     gap: 3rem;
@@ -175,6 +195,7 @@ span{
 .about-text p{
     font-size: 1.8rem;
 
+
 }
 
 /*Skills Section*/
@@ -184,40 +205,45 @@ span{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .skills-items{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .skill-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    cursor: pointer;
-    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+   width: 300px;
+   text-align: center;
 }
 
 .skill-card:hover{
     border-radius: 1rem solid;
     transform: scale(1.05);
+    color: aqua !important;
 }
 
 .skill-card .bx{
     font-size: 8rem;
     transition: 0.4s ease;
+    color: red;
 }
 
 .skill-card .bx:hover{
-    color: red;
+    color: aqua;
 }
 
 .skill-card h3{
     font-size: 2.5rem;
     font-weight: 200;
+    color: red;
+}
+
+.skill-card:hover h3{
+    color: aqua;
 }
 
 .skill-card p{
@@ -299,11 +325,14 @@ span{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 30px 0;
 }
 
 form{
     display: grid;
     row-gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 form input,
@@ -315,6 +344,8 @@ textarea{
     background: rgba(0, 0, 0, 0.8);
     border-radius: 1rem;
     resize: none;
+    box-sizing: border-box;
+    margin-bottom: 15px;
 
 }
 
@@ -324,6 +355,8 @@ textarea{
     padding:  2rem 10%;
     text-align: center;
     font-size: 1rem;
+    background: #0B141E;
+    color: #fff
 }
 
 hr{
@@ -333,6 +366,9 @@ hr{
 
 /*Responsive Section*/
 @media (max-width: 767px){
+    .form{
+        max-width: 100%;
+    }
     #menu-btn{
         display: block;
     }
@@ -370,6 +406,9 @@ hr{
 }
 
 @media (max-width: 620px){
+    .form{
+        max-width: 100%;
+    }
     .skills-items{
         grid-template-columns: repeat(1,1fr);
     }
